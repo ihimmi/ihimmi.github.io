@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="lightbox.js"></script>
+		<title>Photo Gallery</title>
+	</head>
+	<body>
+		<div class="header">
+	  		<h2>Photo Gallery</h2>
+	  		<ul>
+				<li class="nav"><a class = "pswitch" href="index.html">Home</a></li>
+				<li class="nav"><a class = "pswitch" href="todo.html">To Do</a></li>
+	 		</ul>
+	  	</div>
+		<table>
+			<tr>
+				<th><img src="1.jpg" alt="Boats" onclick="openGallery();currentImg(1)" class="border"> </th>
+   			 	<th><img src="2.jpg" alt="Sunset" onclick="openGallery();currentImg(2)" class="border"></th>
+				<th><img src="3.jpg" alt="City River" onclick="openGallery();currentImg(3)" class="border"></th>
+   			 	<th><img src="4.jpg" alt="Sky" onclick="openGallery();currentImg(4)" class="border"></th>
+   			 	<th><img src="5.jpg" alt="Drone" onclick="openGallery();currentImg(5)" class="border"></th>
+   			</tr>
+			<tr>
+				<th><img src="6.jpg" alt="Overexposure" onclick="openGallery();currentImg(6)" class="border"></th>
+   			 	<th><img src="7.jpg" alt="Thunderstorm" onclick="openGallery();currentImg(7)" class="border"></th>
+				<th><img src="8.jpg" alt="Duck" onclick="openGallery();currentImg(8)" class="border"></th>
+   			 	<th><img src="9.jpg" alt="Countryside" onclick="openGallery();currentImg(9)" class="border"></th>
+   			 	<th><img src="10.jpg" alt="City Night" onclick="openGallery();currentImg(10)" class="border"></th>
+   		    </tr>
+   			<tr>
+				<th><img src="11.jpg" alt="Full Moon" onclick="openGallery();currentImg(11)" class="border"></th>
+   			 	<th><img src="12.jpg" alt="Dog Walking" onclick="openGallery();currentImg(12)" class="border"></th>
+				<th><img src="13.jpg" alt="Dog Sitting" onclick="openGallery();currentImg(13)" class="border"></th>
+   			 	<th><img src="14.jpg" alt="Fall" onclick="openGallery();currentImg(14)" class="border"></th>
+   			 	<th><img src="15.jpg" alt="Mountains" onclick="openGallery();currentImg(15)" class="border"></th>
+   			</tr>
+			<tr>
+				<th><img src="16.jpg" alt="Sunset" onclick="openGallery();currentImg(16)" class="border"></th>
+   			 	<th><img src="17.jpg" alt="Statue of Liberty" onclick="openGallery();currentImg(17)" class="border"></th>
+				<th><img src="18.jpg" alt="Beach" onclick="openGallery();currentImg(18)" class="border"></th>
+   			 	<th><img src="19.jpg" alt="Beach Sunset" onclick="openGallery();currentImg(19)" class="border"></th>
+   			 	<th><img src="20.jpg" alt="Snowy City" onclick="openGallery();currentImg(20)" class="border"></th>
+   			</tr>
+   		</table>
+
+   		<!-- Gallery -->
+		<div id="gallery" class="gallerybackground">
+		  <span class="close" onclick="closeGallery()">&#10006;</span>
+		  <div class="galleryoutline">
+
+		    <div class="galleryimg">
+		      <img src="1.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="2.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="3.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="4.jpg" style="width:100%">
+		    </div>
+			</div>
+
+		    <div class="galleryimg">
+		      <img src="5.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="6.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="7.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="8.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="9.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="10.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="11.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="12.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="13.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="14.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="15.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="16.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="17.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="18.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="19.jpg" style="width:100%">
+		    </div>
+
+		    <div class="galleryimg">
+		      <img src="20.jpg" style="width:100%">
+		    </div>
+
+		    <!-- Next/previous controls -->
+		    <a class="prev" onclick="buttons(-1)">&#10094;</a>
+		    <a class="next" onclick="buttons(1)">&#10095;</a>
+
+		    <!-- Thumbnail image controls -->
+		    <div class="gallerythumbnails"><img src="1.jpg" onclick="currentImg(1)" alt="Boats"></div>
+
+		    <div class="gallerythumbnails"><img src="2.jpg" onclick="currentImg(2)" alt="Sunset"></div>
+
+		    <div class="gallerythumbnails"><img src="3.jpg" onclick="currentImg(3)" alt="City River"></div>
+
+		    <div class="gallerythumbnails"><img src="4.jpg" onclick="currentImg(4)" alt="Sky"></div>
+
+		    <div class="gallerythumbnails"><img src="5.jpg" onclick="currentImg(5)" alt="Drone"></div>
+
+			<div class="gallerythumbnails"><img src="6.jpg" onclick="currentImg(6)" alt="Overexposure"></div>
+
+		    <div class="gallerythumbnails"><img src="7.jpg" onclick="currentImg(7)" alt="Thunderstorm"></div>
+
+		    <div class="gallerythumbnails"><img src="8.jpg" onclick="currentImg(8)" alt="Duck"></div>
+
+		    <div class="gallerythumbnails"><img src="9.jpg" onclick="currentImg(9)" alt="Countryside"></div>
+
+		    <div class="gallerythumbnails"><img src="10.jpg" onclick="currentImg(10)" alt="City Night"></div>
+
+		    <div class="gallerythumbnails"><img src="11.jpg" onclick="currentImg(11)" alt="Full Moon"></div>
+
+		    <div class="gallerythumbnails"><img src="12.jpg" onclick="currentImg(12)" alt="Dog Walking"></div>
+
+		    <div class="gallerythumbnails"><img src="13.jpg" onclick="currentImg(13)" alt="Dog Sitting"></div>
+
+		    <div class="gallerythumbnails"><img src="14.jpg" onclick="currentImg(14)" alt="Fall"></div>
+
+		    <div class="gallerythumbnails"><img src="15.jpg" onclick="currentImg(15)" alt="Mountains"></div>
+
+		    <div class="gallerythumbnails"><img src="16.jpg" onclick="currentImg(16)" alt="Sunset"></div>
+
+		    <div class="gallerythumbnails"><img src="17.jpg" onclick="currentImg(17)" alt="Statue of Liberty"></div>
+
+		    <div class="gallerythumbnails"><img src="18.jpg" onclick="currentImg(18)" alt="Beach"></div>
+
+		    <div class="gallerythumbnails"><img src="19.jpg" onclick="currentImg(19)" alt="Beach Sunset"></div>
+
+		    <div class="gallerythumbnails"><img src="20.jpg" onclick="currentImg(20)" alt="Snowy City"></div>
+		  </div>
+		</div>
+   	</body>
+</html>

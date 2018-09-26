@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="todo.js"></script>
+		<title>To Do</title>
+	</head>
+	<body>
+		<div class="header">
+	  		<h2>To Do List</h2>
+	  		<ul>
+				<li class="nav"><a class = "pswitch" href="index.html">Home</a></li>
+				<li class="nav"><a class = "pswitch" href="gallery.html">Gallery</a></li>
+	 		</ul>
+	  	</div>
+	  	<input type="text" id="task" placeholder="Task Name">
+	  	<select id="category">
+	  		<option value="Category">Category</option>
+			<option value="Homework">Homework</option>
+			<option value="Appointment">Appointment</option>
+			<option value="Workout">Workout</option>
+			<option value="Recreational">Recreational</option>
+		</select>
+	  	<input type="text" id="timedue" placeholder="Time Due">
+	  	<span onclick="newToDo()" class="add">Add</span>
+		<ul id="head">
+		</ul>
+	</body>
+</html>

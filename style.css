@@ -1,4 +1,4 @@
-
+/* General Styling*/
 /* Style the header */
 .header 
 {
@@ -43,6 +43,9 @@
     box-sizing: border-box;
 }
 
+
+/* Styling for To Do List */
+
 /* Remove margins and padding from the list */
 ul 
 {
@@ -66,9 +69,6 @@ ul li
     	-ms-user-select: none;
     	user-select: none;
 }
-
-
-
 
 /* Style the input */
 input 
@@ -103,7 +103,6 @@ input.check
     	font-size: 16px;
     	cursor: pointer;
     	border-radius: 0;
-
 }
 
 .add:hover 
@@ -129,16 +128,7 @@ select
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/* Styling for Image Gallery*/
 
 img 
 {
